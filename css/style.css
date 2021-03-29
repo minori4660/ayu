@@ -1,0 +1,166 @@
+@charset "UTF-8"
+ 
+/*指定のタグの余白を削除する*/    
+body,h1,h2,h3,p,ul,dl,dt,dd{margin: 0;
+    padding: 0;}
+
+*{box-sizing: border-box;}/*これが入っていると、widthの設定をする際にpaddingとborderの数値を気にせずに出来る*/
+
+/*全体指定*/
+body{font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic';}
+
+/*画像の下に出る余白を消すため*/
+img{vertical-align: bottom;
+    max-width: 100%}    
+    
+/*共通*/
+
+html{font-size: 100%;}
+
+a{text-decoration: none;}
+
+/*header*/
+.logo{width: 210px;
+      margin: 0px;}
+
+.main-nav{display: flex;/*タグを横並び*/
+          font-size: 1.25rem;
+          text-transform: uppercase;/*すべての文字を大文字にする*/
+          margin-top: 34px;
+          list-style: none;}
+
+.main-nav li{margin-left: 36px;}
+
+.main-nav a{color: #432;}
+
+.main-nav a:hover{color: #ff1493;}
+
+.page-header{display: flex;
+             justify-content: space-between;/*両端の設置設定*/}
+
+.wrapper{max-width: 1100;/*横幅最大*/
+        margin: 0 auto;/*中央配置設定*/
+        padding: 0 4%;/**/}
+
+.home-content{text-align: center;/*画面と余白*/
+              margin-top: 10%;}
+
+
+.home-content p{font-size: 1.125rem;/*pタグとフォントサイズ*/
+                margin: 10px 0 42px:}
+
+/*見出し*/
+.page-title{font-size: 5rem;/*page-titile クラスにフォント指定を入れる*/
+            font-family: 'PHilosopher', serif;
+            text-transform: uppercase;}
+
+/*ボタン*/
+.button{font-size: 1.375rem;
+        background: #ff1493;
+        color: azure;
+        border-radius: 5px;
+        padding: 18px 32px;}
+
+
+.button:hover{background: #c71585;}
+
+.big-bg{background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;}
+
+#home{background-image: url(../images/IMG_1202.jpeg);
+      min-height: 100vh;}
+
+#home.page-title{text-transform: none;}
+
+/*newshtml*/
+#news{background-image: url(../images/IMG_1201.jpeg);
+      height: 270px;
+      margin-bottom: 40px;}
+
+#news .page-title{text-align: center;
+                color: #ff1493;}
+
+footer{background-color: #000000;
+        text-align: center;
+        padding: 26px 0;}
+
+footer p{color: #fff;
+           font-size: 0.865rem; }
+
+article{width: 74%;}
+
+aside{width: 22%;}
+
+.news-contents{display: flex;
+                justify-content: space-between;
+                margin-bottom: 50px;}
+
+.post-info{position: relative;
+           padding-top: 4px;
+           margin-bottom: 40px;}
+
+.sub-title{font-size: 1.375rem;
+           padding: 0 8px 8px;
+           border-bottom: 2px #000000 solid;
+           font-weight: normal;}
+
+.sub-menu{margin-bottom: 60px;
+          list-style: none;}
+
+.sub-menu li{border-bottom: 1px #ddd solid;}
+
+.sub-menu a{color: #000000;
+            padding: 10px;
+            display: block;}
+
+.sub-menu a:hover{color: #ff1493;}
+
+aside p{padding: 12px 10px;}
+
+#contact{background-image: url(../images/IMG_8188.jpeg);
+        main-height: 100vh;}
+
+
+form div{margin-bottom: 14px;}
+
+label{font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;}
+
+input[type="text"],
+input[type="email"],
+textarea{background: rgba(255,255,255,.5);
+        border: 1px #fff solid;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1rem;}
+
+input[type="text"],
+input[type="email"]{
+    width: 100%
+        max-width:480px;}
+
+textare{width: 100%;
+        max-width: 480px;
+        height: 6rem;}
+
+input[type="submit"]{
+    border: none;
+    cursor: pointer;
+    line-height: 1;}
+
+/*SNS*/
+
+#sns{background: #FAF7F0;
+    padding: 4% 0;}
+
+#sns .wrapper{display: flex;
+            justify-content: space-between;}
+
+#sns .sub-title{margin-bottom: 30px;}
+
+.sns-box{width: 30%}
+
+
+
